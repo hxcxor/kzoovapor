@@ -27,8 +27,8 @@ public class JuiceTourActivity extends Activity {
         WebSettings webSettings = juiceTourWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-        //Need to add juice tour url
-        juiceTourWebView.loadUrl("http://beta.html5test.com/");
+        //Open the juice tour
+        juiceTourWebView.loadUrl("http://kalamazoovaporjuicetour.com/#!leaderboards/caue");
 
 
         juiceTourWebView.setWebViewClient(new WebViewClient() {
@@ -39,8 +39,16 @@ public class JuiceTourActivity extends Activity {
             }
         });
 
-        this.setContentView(juiceTourWebView);
 
+    }
+    //allows the back button to return to the app
+    @Override
+    public void onBackPressed() {
+        if(juiceTourWebView.canGoBack()) {
+            juiceTourWebView.goBack();
+        } else {
+            super.onBackPressed();
+        }
     }
 
 
