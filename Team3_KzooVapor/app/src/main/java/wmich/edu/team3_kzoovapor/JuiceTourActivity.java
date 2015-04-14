@@ -4,8 +4,10 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 
 public class JuiceTourActivity extends Activity {
@@ -25,9 +27,20 @@ public class JuiceTourActivity extends Activity {
         WebSettings webSettings = juiceTourWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-
         //Need to add juice tour url
         juiceTourWebView.loadUrl("http://beta.html5test.com/");
+
+
+        juiceTourWebView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                view.loadUrl(url);
+                return true;
+            }
+        });
+
+        this.setContentView(juiceTourWebView);
+
     }
 
 
