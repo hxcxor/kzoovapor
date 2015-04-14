@@ -23,7 +23,7 @@ public class JuiceTourActivity extends Activity {
         juiceTourWebView = (WebView) findViewById(R.id.activity_juice_tour_webview);
 
 
-        // Enable Javascript for the page
+        // Enable Javascript for the app
         WebSettings webSettings = juiceTourWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
