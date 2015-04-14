@@ -1,17 +1,31 @@
 package wmich.edu.team3_kzoovapor;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 
 
-public class JuiceTourActivity extends ActionBarActivity {
+public class JuiceTourActivity extends Activity {
+
+    private WebView juiceTourWebView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_juice_tour);
+
+        //initialize the webview
+        juiceTourWebView = (WebView) findViewById(R.id.activity_juice_tour_webview);
+
+
+        // Enable Javascript for the page
+        WebSettings webSettings = juiceTourWebView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+
+        juiceTourWebView.loadUrl("http://beta.html5test.com/");
     }
 
 
