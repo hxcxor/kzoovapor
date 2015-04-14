@@ -25,6 +25,8 @@ public class JuiceTourActivity extends Activity {
         WebSettings webSettings = juiceTourWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
+
+        //Need to add juice tour url
         juiceTourWebView.loadUrl("http://beta.html5test.com/");
     }
 
