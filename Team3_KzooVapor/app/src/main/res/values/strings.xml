@@ -13,5 +13,21 @@
     <string name="title_activity_information">InformationActivity</string>
     <string name="title_activity_juice_tour">JuiceTourActivity</string>
     <string name="title_activity_juice_details">JuiceDetailsActivity</string>
+    <!-- String for juice list button -->
+    <string name="btnJuiceList">Juice List</string>
+    <!-- String for promotions button -->
+    <string name="btnPromotions">Promotions</string>
+    <!-- String for advanced users button -->
+    <string name="btnAdvancedUsers">Advanced Users</string>
+    <!-- String for information button -->
+    <string name="btnInformation">Information</string>
+    <!-- String for money saver button -->
+    <string name="btnMoneySaver">Money Saver</string>
+    <!-- String for locations button -->
+    <string name="btnLocations">Locations</string>
+    <!-- String for what did i get button -->
+    <string name="btnWhatDidIGet">What Did I Get</string>
+    <!-- String for juice tour button -->
+    <string name="btnJuiceTour">Juice Tour</string>
 
 </resources>
