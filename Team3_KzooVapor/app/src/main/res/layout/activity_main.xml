@@ -9,64 +9,115 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
+    <!-- Imageview to wrap KVS Logo. Height
+    and width wrap content -->
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:src="@drawable/kvs_logo"/>
 
-    <Button
+    <!-- Nested linear layout for buttons.
+     Layout gravity.-->
+
+    <LinearLayout
         android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+    <!-- Button for juiceList. Id is is
+    "btnJuiceList" and text is "btnJuiceList".
+    Gravity is center_horizontal. Height and
+    width wrap content. -->
+
+    <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="@string/btnJuiceList"
-        android:id="@+id/buttonJuiceList"/>
+        android:id="@+id/btnJuiceList"/>
+
+    <!-- Button for promotions. Id is is
+    "buttonPromotions" and text is "btnPromotions".
+    Gravity is center_horizontal. Height and
+    width wrap content. -->
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:id="@+id/buttonPromotions"
         android:text="@string/btnPromotions"/>
 
+    <!-- Button for advancedUsers. Id is
+    "btnAdvancedUsers" and calls string "btnAdvancedUsers".
+    Layout gravity is center horizontal. Height and
+    width wrap content. -->
+
+
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:id="@+id/buttonAdvancedUsers"
         android:text="@string/btnAdvancedUsers"/>
 
+    <!-- Button for information. Id is
+    btnInformation and calls string "btnInformation".
+    Layout gravity is center horizontal. Height and
+    width wrap content. -->
+
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:id="@+id/buttonInformation"
         android:text="@string/btnInformation"/>
 
+    <!-- Button for MoneySaver. Id is
+    "btnMoneySaver" and calls string "btnMoneySaver".
+    Layout gravity is center horizontal. Height and
+    width wrap content. -->
+
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:id="@+id/buttonMoneySaver"
         android:text="@string/btnMoneySaver"/>
 
+    <!-- Button for Locations. Id is
+    "btnLocations" and calls string "btnLocations".
+    Layout gravity is center horizontal. Height and
+    width wrap content. -->
+
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:id="@+id/buttonLocations"
         android:text="@string/btnLocations"/>
 
+    <!-- Button for WhatDidIGet. Id is
+    "btnWhatDidIGet" and calls string "btnWhatDidIGet".
+    Layout gravity is center horizontal. Height and
+    width wrap content. -->
+
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:id="@+id/buttonWhatDidIGet"
         android:text="@string/btnWhatDidIGet"/>
 
+    <!-- Button for JuiceTour. Id is
+    "btnJuiceTour" and calls string "btnJuiceTour".
+    Layout gravity is center horizontal. Height and
+    width wrap content. -->
+
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
         android:id="@+id/buttonJuiceTour"
         android:text="@string/btnJuiceTour"/>
+
+    </LinearLayout>
+
 </LinearLayout>
