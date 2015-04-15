@@ -22,14 +22,12 @@ public class JuiceTourActivity extends Activity {
         //initialize the webview
         juiceTourWebView = (WebView) findViewById(R.id.activity_juice_tour_webview);
 
-
         // Enable Javascript for the app
         WebSettings webSettings = juiceTourWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
         //Open the juice tour
         juiceTourWebView.loadUrl("http://kalamazoovaporjuicetour.com/#!leaderboards/caue");
-
 
         juiceTourWebView.setWebViewClient(new WebViewClient() {
             @Override
@@ -38,8 +36,6 @@ public class JuiceTourActivity extends Activity {
                 return true;
             }
         });
-
-
     }
     //allows the back button to return to the app
     @Override

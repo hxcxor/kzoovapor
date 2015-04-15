@@ -21,14 +21,12 @@ public class InformationActivity extends ActionBarActivity {
         //initialize the webview
         informationWebView = (WebView) findViewById(R.id.activity_information_webview);
 
-
         // Enable Javascript for the app
         WebSettings webSettings = informationWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
         //Open the about us page
         informationWebView.loadUrl("http://www.kalamazoovaporshop.com/store-locations/");
-
 
         informationWebView.setWebViewClient(new WebViewClient() {
             @Override
@@ -37,8 +35,6 @@ public class InformationActivity extends ActionBarActivity {
                 return true;
             }
         });
-
-
     }
     //allows the back button to return to the app
     @Override
