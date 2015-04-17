@@ -2,6 +2,7 @@ package wmich.edu.team3_kzoovapor;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -47,6 +48,7 @@ public class CustomAdapter extends BaseAdapter{
     {
         TextView tv;
         //ImageView img;
+
     }
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
