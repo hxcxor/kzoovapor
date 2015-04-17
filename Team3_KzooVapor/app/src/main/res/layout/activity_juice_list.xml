@@ -17,4 +17,6 @@
         android:id="@+id/imageViewJuiceList"
         android:src="@drawable/juicelist" />
 
+    <!-- TODO LISTVIEW TO PULL JUICE NAMES -->
+
 </RelativeLayout>

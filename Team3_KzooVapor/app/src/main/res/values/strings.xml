@@ -29,5 +29,20 @@
     <string name="btnWhatDidIGet">What Did I Get</string>
     <!-- String for juice tour button -->
     <string name="btnJuiceTour">Juice Tour</string>
-
+    <!-- String for resistance calculator -->
+    <string name="resistanceCalc">Resistance Calculator</string>
+    <!-- String for wire type -->
+    <string name="txtWireType">Wire Type</string>
+    <!-- String for wire length -->
+    <string name="txtWireLength">Length</string>
+    <!-- String for wire gauge -->
+    <string name="txtWireGauge">Gauge</string>
+    <!-- String for diameter of coil -->
+    <string name="txtDiameterOfCoil">Diameter of Coil</string>
+    <!-- String for calculate button -->
+    <string name="btnCalculate">Calculate</string>
+    <!-- String for advanced user output -->
+    <string name="txtCoilResistance">Your coil will have a resistance of:</string>
+    <!-- String for unknown -->
+    <string name="unknown">Unknown</string>
 </resources>

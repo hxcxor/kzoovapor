@@ -1,7 +1,7 @@
 package wmich.edu.team3_kzoovapor;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebSettings;
@@ -16,14 +16,14 @@ public class InformationActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_juice_tour);
+        setContentView(R.layout.activity_information);
 
         //initialize the webview
         informationWebView = (WebView) findViewById(R.id.activity_information_webview);
 
         // Enable Javascript for the app
-        WebSettings webSettings = informationWebView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
+          WebSettings webSettings = informationWebView.getSettings();
+          webSettings.setJavaScriptEnabled(true);
 
         //Open the about us page
         informationWebView.loadUrl("http://www.kalamazoovaporshop.com/store-locations/");
