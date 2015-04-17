@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Team3_KzooVapor</string>
+    <string name="app_name">Kalamazoo Vapor</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_juice_list">JuiceListActivity</string>
@@ -29,5 +29,6 @@
     <string name="btnWhatDidIGet">What Did I Get</string>
     <!-- String for juice tour button -->
     <string name="btnJuiceTour">Juice Tour</string>
+    <string name="image_header">kzoo vapor logo</string>
 
 </resources>
