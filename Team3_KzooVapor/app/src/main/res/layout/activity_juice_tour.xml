@@ -5,6 +5,8 @@
     android:layout_height="match_parent"
     tools:context=".JuiceTourActivity">
 
+    <!-- Webview to display juice tour leaderboards -->
+
     <WebView
         android:id="@+id/activity_juice_tour_webview"
         android:layout_width="match_parent"

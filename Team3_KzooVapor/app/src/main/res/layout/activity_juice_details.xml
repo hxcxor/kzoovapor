@@ -6,5 +6,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="wmich.edu.team3_kzoovapor.JuiceDetailsActivity">
 
+    <!-- TODO USE TEXTVIEWS EDITTEXTS TO PULL JUICE DETAILS FROM
+         TODO JUICE LIST DB -->
 
 </RelativeLayout>

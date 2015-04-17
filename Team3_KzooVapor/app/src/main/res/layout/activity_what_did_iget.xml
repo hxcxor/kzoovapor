@@ -17,4 +17,11 @@
         android:id="@+id/imageViewPreviousOrders"
         android:src="@drawable/previousorders" />
 
+    <!-- List view to pull array for previous orders -->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
 </RelativeLayout>

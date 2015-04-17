@@ -17,4 +17,6 @@
         android:id="@+id/imageViewPromotions"
         android:src="@drawable/promotions" />
 
+    <!-- TODO insert static current promotions -->
+
 </RelativeLayout>
