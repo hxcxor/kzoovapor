@@ -1,10 +1,8 @@
 package wmich.edu.team3_kzoovapor;
 
-<<<<<<< HEAD
 import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
-=======
->>>>>>> origin/master
+
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;

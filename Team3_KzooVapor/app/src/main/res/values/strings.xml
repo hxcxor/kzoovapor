@@ -29,10 +29,9 @@
     <string name="btnWhatDidIGet">What Did I Get</string>
     <!-- String for juice tour button -->
     <string name="btnJuiceTour">Juice Tour</string>
-<<<<<<< HEAD
+
     <string name="image_header">kzoo vapor logo</string>
 
-=======
     <!-- String for resistance calculator -->
     <string name="resistanceCalc">Resistance Calculator</string>
     <!-- String for wire type -->
@@ -49,5 +48,5 @@
     <string name="txtCoilResistance">Your coil will have a resistance of:</string>
     <!-- String for unknown -->
     <string name="unknown">Unknown</string>
->>>>>>> origin/master
+
 </resources>
