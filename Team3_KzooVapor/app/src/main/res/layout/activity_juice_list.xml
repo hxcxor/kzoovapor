@@ -4,19 +4,29 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="wmich.edu.team3_kzoovapor.JuiceListActivity">
+    tools:context="wmich.edu.team3_kzoovapor.JuiceListActivity"
+    android:background="@drawable/bkgrnd">
 
     <!-- Imageview for Juice List banner. Width
      matches parent and height is 100dp. Id is
      "imageViewJuiceList" and calls drawable
      "juicelist".-->
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:id="@+id/imageViewJuiceList"
-        android:src="@drawable/juicelist" />
-
     <!-- TODO LISTVIEW TO PULL JUICE NAMES -->
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewPremButton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/premiumbutton" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewHouseButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/housebutton" />
 </RelativeLayout>

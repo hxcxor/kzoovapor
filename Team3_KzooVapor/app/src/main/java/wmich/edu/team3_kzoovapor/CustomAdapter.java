@@ -2,16 +2,12 @@ package wmich.edu.team3_kzoovapor;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class CustomAdapter extends BaseAdapter{
     String [] result;
@@ -46,7 +42,7 @@ public class CustomAdapter extends BaseAdapter{
 
     public class Holder
     {
-        TextView tv;
+        TextView textViewHolder;
         //ImageView img;
 
     }
@@ -56,9 +52,9 @@ public class CustomAdapter extends BaseAdapter{
         Holder holder=new Holder();
         View rowView;
         rowView = inflater.inflate(R.layout.program_list, null);
-        holder.tv=(TextView) rowView.findViewById(R.id.textView1);
+        holder.textViewHolder =(TextView) rowView.findViewById(R.id.textView1);
         //holder.img=(ImageView) rowView.findViewById(R.id.imageView1);
-        holder.tv.setText(result[position]);
+        holder.textViewHolder.setText(result[position]);
         //holder.img.setImageResource(imageId[position]);
         rowView.setOnClickListener(new OnClickListener() {
             @Override

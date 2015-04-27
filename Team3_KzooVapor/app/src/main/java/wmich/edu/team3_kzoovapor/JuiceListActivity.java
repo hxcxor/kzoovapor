@@ -1,9 +1,13 @@
 package wmich.edu.team3_kzoovapor;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.ImageView;
 
 
 public class JuiceListActivity extends ActionBarActivity {
@@ -12,7 +16,32 @@ public class JuiceListActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_juice_list);
+        ImageView imageButtonPrem = (ImageView) findViewById(R.id.imageViewPremButton);
+        ImageView imageButtonHouse = (ImageView) findViewById(R.id.imageViewHouseButton);
+
+        imageButtonPrem.setOnTouchListener(premiumJuice);
+        imageButtonHouse.setOnTouchListener(houseJuice);
     }
+
+    View.OnTouchListener premiumJuice = new View.OnTouchListener() {
+        @Override
+        public boolean onTouch(View v, MotionEvent event) {
+
+            Intent senseIntent = new Intent(JuiceListActivity.this, PremiumJuiceActivity.class);
+            startActivity(senseIntent);
+            return false;
+        }
+    };
+
+    View.OnTouchListener houseJuice = new View.OnTouchListener() {
+        @Override
+        public boolean onTouch(View v, MotionEvent event) {
+
+            Intent senseIntent = new Intent(JuiceListActivity.this, PremiumJuiceActivity.class);
+            startActivity(senseIntent);
+            return false;
+        }
+    };
 
 
     @Override

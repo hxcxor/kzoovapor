@@ -56,6 +56,14 @@
             android:name=".JuiceDetailsActivity"
             android:label="@string/title_activity_juice_details" >
         </activity>
+        <activity
+            android:name=".PremiumJuiceActivity"
+            android:label="Premium Juice">
+        </activity>
+        <activity
+            android:name=".HouseJuiceActivity"
+            android:label="House Juice">
+        </activity>
     </application>
 
 </manifest>
