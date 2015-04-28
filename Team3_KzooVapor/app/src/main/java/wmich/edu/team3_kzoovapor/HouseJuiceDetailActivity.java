@@ -1,11 +1,7 @@
 package wmich.edu.team3_kzoovapor;
 
-import android.app.ActionBar;
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,25 +17,24 @@ public class HouseJuiceDetailActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_housedetail);
 
-        TextView tvTitleLabel = (TextView)findViewById(R.id.tvTitleLabel);
-        TextView tvDescLabel = (TextView)findViewById(R.id.tvDescLabel);
-        ImageView ivPrImage = (ImageView)findViewById(R.id.ivPrvImage);
-        Button btn = (Button)findViewById(R.id.button1);
+        TextView tvTitleLabel = (TextView)findViewById(R.id.textViewHJTitle);
+        TextView tvDescLabel = (TextView)findViewById(R.id.textViewHJDisc);
+        ImageView ivPrImage = (ImageView)findViewById(R.id.imageViewJuice);
+
 
 
         Bundle extras = getIntent().getExtras();
 
         if (extras != null) {
 
-            title = extras.getString("province");
+            title = extras.getString("juiceName");
             tvTitleLabel.setText(title);
-            btn.setText("More about "+ title);
 
 
-            image = extras.getInt("prvImg");
+            image = extras.getInt("juiceImg");
             ivPrImage.setImageResource(image);
 
-            description = extras.getString("provincedesclabel");
+            description = extras.getString("juiceDiscLabel");
             tvDescLabel.setText(description);
 
         }
