@@ -57,6 +57,8 @@
     <string name="PacksPerWeek">Packs per week:</string>
     <string name="mnySaverImg">money saver image</string>
     <string name="imagedisc">holder for image</string>
+    <string name="hintName">Name</string>
+    <string name="hintManufacturer">Manufacturer</string>
     <color name="green">#8FD000</color>
     <color name="blue">#2F4CA3</color>
 
