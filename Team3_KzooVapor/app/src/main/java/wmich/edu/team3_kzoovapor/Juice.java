@@ -26,4 +26,32 @@ public class Juice
                 "manufacturer=" + manufacturer + ",  flavor=" + flavor + ", + ";
     }
 
+
+    public void setFlavor(String flavor) {
+        this.flavor = flavor;
+    }
+
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getManufacturer() {
+        return manufacturer;
+    }
+
+    public String getFlavor() {
+        return flavor;
+    }
 }

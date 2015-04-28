@@ -38,10 +38,6 @@ public class MoneySaverActivity extends ActionBarActivity {
         packsPerWeekEdit.addTextChangedListener(editTextWatcher);
 
 
-
-
-
-
     }
 
 
