@@ -84,6 +84,7 @@ public class HouseJuiceActivity extends ActionBarActivity {
         houseJuiceListView.addHeaderView(header, null, false);
 
 
+
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, juices);
         houseJuiceListView.setAdapter(adapter);
         houseJuiceListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

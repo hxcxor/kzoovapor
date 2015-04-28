@@ -57,6 +57,7 @@
     <string name="PacksPerWeek">Packs of cigarettes per week:</string>
     <string name="mnySaverImg">money saver image</string>
     <color name="green">#8FD000</color>
+    <color name="blue">#2F4CA3</color>
 
     <string-array name="houseJuiceArray">
         <item>Tastes like the apples and cinnamon cereal with slightly spicy tobacco notes.</item>
