@@ -48,10 +48,17 @@
     <string name="txtCoilResistance">Your coil will have a resistance of:</string>
     <!-- String for unknown -->
     <string name="unknown">Unknown</string>
-    <string name="SoFarSaved">Your looking to save:</string>
-    <string name="InitialCost">Inital Cost of Supplies</string>
-    <string name="CostPerMil">Cost Per Millileter</string>
-    <string name="AmountPerMil">Amount of Millileters</string>
+    <!-- String for buttonSaveJuice -->
+    <string name="buttonSaveJuice">Save Juice</string>
+    <!-- String for manufacturer hint -->
+    <string name="hintName">Juice Name</string>
+    <!-- String for juice name hint -->
+    <string name="hintManufacturer">Juice Manufacturer</string>
+
+    <string name="SoFarSaved">You\'re looking to save:</string>
+    <string name="InitialCost">Initial Cost of Supplies</string>
+    <string name="CostPerMil">Cost Per Milliliter</string>
+    <string name="AmountPerMil">Amount of Milliliters</string>
     <string name="EJuicePerWeek">Amount of E-Juice Per Week</string>
     <string name="CostPerPack">Cost Per Pack</string>
     <string name="PacksPerWeek">Packs of cigarettes per week:</string>
@@ -169,4 +176,5 @@
         <item>This mentholated Watermelon Lemonade is reminiscent to a snow cone flavor. No huskies
             were harmed in the making of this flavor</item>
     </string-array>
+
 </resources>
