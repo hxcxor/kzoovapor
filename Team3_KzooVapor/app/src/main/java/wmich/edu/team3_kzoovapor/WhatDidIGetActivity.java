@@ -1,39 +1,91 @@
 package wmich.edu.team3_kzoovapor;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.ListActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
 
+import java.sql.SQLException;
+import java.util.List;
 
-public class WhatDidIGetActivity extends ActionBarActivity {
+public class WhatDidIGetActivity extends ListActivity
+{
+
+    private JuiceDataSource datasource;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_what_did_iget);
-    }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_what_did_iget, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        datasource = new JuiceDataSource(this);
+        try {
+            datasource.open();
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
 
-        return super.onOptionsItemSelected(item);
+        List<Juice> values = datasource.getAllJuice();
+
+        // use simplecursoradapter to show listview elements
+
+        ArrayAdapter<Juice> adapter = new ArrayAdapter<Juice>(this,
+                R.layout.simple_list_item_1,values);
+        setListAdapter(adapter);
+
     }
+
+    // Called with onclick attribute in activity_what_did_iget
+    public void onClick (View view)
+    {
+        @SuppressWarnings("unchecked")
+        ArrayAdapter<Juice> adapter = (ArrayAdapter<Juice>) getListAdapter();
+
+        Juice juice = null;
+
+        switch (view.getId())
+        {
+            case R.id.buttonAdd:
+
+                EditText editTextJuiceName = (EditText) findViewById(R.id.nameEditText);
+                EditText editTextManufacturer = (EditText) findViewById(R.id.manufacturerEditText);
+
+                String name = editTextJuiceName.getText().toString();
+                String manufacturer = editTextManufacturer.getText().toString();
+
+                // save juice to db
+                juice = datasource.createJuice(name, manufacturer);
+                adapter.add(juice);
+                break;
+
+            case R.id.buttonDelete:
+                if (getListAdapter().getCount() > 0)
+                {
+                    juice = (Juice) getListAdapter().getItem(0);
+                    datasource.deleteJuice(juice);
+                    adapter.remove(juice);
+                }
+                break;
+        }
+        adapter.notifyDataSetChanged();
+    }
+
+    protected void onResume ()
+    {
+        try {
+            datasource.open();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        super.onResume();
+    }
+
+    protected void onPause ()
+    {
+        datasource.close();
+        super.onPause();
+    }
+
 }

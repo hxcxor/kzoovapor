@@ -42,10 +42,6 @@ public class MoneySaverActivity extends ActionBarActivity {
         costPerMiliEdit.addTextChangedListener(editTextCostPerMWatcher);
         calcTotalSaved();
 
-
-
-
-
     }
 
 

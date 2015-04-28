@@ -1,15 +1,15 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="wmich.edu.team3_kzoovapor.WhatDidIGetActivity">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
 
     <!-- Imageview for Previous Orders banner. Width
-     matches parent and height is 100dp. Id is
-     "imageViewPreviousOrders" and calls
-     drawable "previousorders". -->
+             matches parent and height is 100dp. Id is
+             "imageViewPreviousOrders" and calls
+             drawable "previousorders". -->
 
     <ImageView
         android:layout_width="match_parent"
@@ -17,11 +17,64 @@
         android:id="@+id/imageViewPreviousOrders"
         android:src="@drawable/previousorders" />
 
-    <!-- List view to pull array for previous orders -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:orientation="vertical"
+        android:layout_below="@id/imageViewPreviousOrders"
+        android:useDefaultMargins="true" >
+
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintName"
+            android:imeOptions="actionNext"
+            android:inputType="text">
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/manufacturerEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintManufacturer"
+            android:imeOptions="actionNext"
+            android:inputType="text">
+        </EditText>
+
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Juice"
+            android:onClick="onClick"/>
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Juice"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
 
     <ListView
+        android:id="@android:id/list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:text="@string/unknown">
     </ListView>
 
-</RelativeLayout>
+</LinearLayout>
