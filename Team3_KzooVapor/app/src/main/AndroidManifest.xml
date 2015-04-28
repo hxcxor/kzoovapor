@@ -48,7 +48,7 @@
             android:configChanges="orientation|keyboardHidden">
         </activity>
         <activity
-            android:name=".LocationsActivity"
+            android:name=".FavoritesActivity"
             android:label="@string/title_activity_locations"
             android:screenOrientation="portrait"
             android:configChanges="orientation|keyboardHidden">

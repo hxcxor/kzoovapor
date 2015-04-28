@@ -1,6 +1,7 @@
 package wmich.edu.team3_kzoovapor;
 
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -18,6 +19,7 @@ public class JuiceListActivity extends ActionBarActivity {
         setContentView(R.layout.activity_juice_list);
         ImageView imageButtonPrem = (ImageView) findViewById(R.id.imageViewPremButton);
         ImageView imageButtonHouse = (ImageView) findViewById(R.id.imageViewHouseButton);
+
 
         imageButtonPrem.setOnTouchListener(premiumJuice);
         imageButtonHouse.setOnTouchListener(houseJuice);

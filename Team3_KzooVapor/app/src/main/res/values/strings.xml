@@ -56,6 +56,7 @@
     <string name="CostPerPack">Cost Per Pack</string>
     <string name="PacksPerWeek">Packs of cigarettes per week:</string>
     <string name="mnySaverImg">money saver image</string>
+    <string name="imagedisc">holder for image</string>
     <color name="green">#8FD000</color>
     <color name="blue">#2F4CA3</color>
 

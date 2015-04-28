@@ -90,7 +90,7 @@ public class CustomAdapter extends BaseAdapter{
                         break;
 
                     case 5:
-                        Intent intent5 = new Intent(context, LocationsActivity.class);
+                        Intent intent5 = new Intent(context, FavoritesActivity.class);
                         context.startActivity(intent5);
                         break;
 
