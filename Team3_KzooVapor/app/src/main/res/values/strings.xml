@@ -57,4 +57,12 @@
     <string name="PacksPerWeek">Packs of cigarettes per week:</string>
     <string name="mnySaverImg">money saver image</string>
     <color name="green">#8FD000</color>
+
+    <string-array name="houseJuiceArray">
+        <item>Tastes like the apples and cinnamon cereal with slightly spicy tobacco notes.</item>
+        <item>Tastes just like the popular soft drink that is exclusive to a well known fast-food
+            taco restaurant. Little bit of citrus with a BLAST of berry.</item>
+        <item>If you\'ve been looking for an energy drink flavor that is true to the original
+            look no further this is it!</item>
+    </string-array>
 </resources>

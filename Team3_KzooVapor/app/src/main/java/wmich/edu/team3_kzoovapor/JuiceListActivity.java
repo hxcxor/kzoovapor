@@ -37,7 +37,7 @@ public class JuiceListActivity extends ActionBarActivity {
         @Override
         public boolean onTouch(View v, MotionEvent event) {
 
-            Intent senseIntent = new Intent(JuiceListActivity.this, PremiumJuiceActivity.class);
+            Intent senseIntent = new Intent(JuiceListActivity.this, HouseJuiceActivity.class);
             startActivity(senseIntent);
             return false;
         }

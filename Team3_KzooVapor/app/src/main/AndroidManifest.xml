@@ -64,6 +64,10 @@
             android:name=".HouseJuiceActivity"
             android:label="House Juice">
         </activity>
+        <activity
+            android:name=".HouseJuiceDetailActivity"
+            android:label="Details">
+        </activity>
     </application>
 
 </manifest>
