@@ -48,13 +48,13 @@
     <string name="txtCoilResistance">Your coil will have a resistance of:</string>
     <!-- String for unknown -->
     <string name="unknown">Unknown</string>
-    <string name="SoFarSaved">Your looking to save:</string>
+    <string name="SoFarSaved">Your savings are:</string>
     <string name="InitialCost">Inital Cost of Supplies</string>
     <string name="CostPerMil">Cost Per Millileter</string>
-    <string name="AmountPerMil">Amount of Millileters</string>
+    <string name="AmountPerMil">Millileters</string>
     <string name="EJuicePerWeek">Amount of E-Juice Per Week</string>
     <string name="CostPerPack">Cost Per Pack</string>
-    <string name="PacksPerWeek">Packs of cigarettes per week:</string>
+    <string name="PacksPerWeek">Packs per week:</string>
     <string name="mnySaverImg">money saver image</string>
     <string name="imagedisc">holder for image</string>
     <color name="green">#8FD000</color>

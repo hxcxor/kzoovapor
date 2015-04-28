@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.NumberFormat;
 
@@ -35,8 +36,11 @@ public class MoneySaverActivity extends ActionBarActivity {
         //instantiate the text view
         savingsPerWeek = (TextView) findViewById(R.id.textViewSavedTotal);
 
-        packsPerWeekEdit.addTextChangedListener(editTextWatcher);
-
+        packsPerWeekEdit.addTextChangedListener(editTextPacksPerWWatcher);
+        costPerPackEdit.addTextChangedListener(editTextCostPerPWatcher);
+        eJuicePerWeekEdit.addTextChangedListener(editTextEJuicePerWeekWatcher);
+        costPerMiliEdit.addTextChangedListener(editTextCostPerMWatcher);
+        calcTotalSaved();
 
 
 
@@ -45,26 +49,101 @@ public class MoneySaverActivity extends ActionBarActivity {
     }
 
 
-    private TextWatcher editTextWatcher = new TextWatcher() {
+    private TextWatcher editTextPacksPerWWatcher = new TextWatcher() {
 
         public void onTextChanged(CharSequence s, int start, int before, int count) {
 
-
-            packsPerW = Double.parseDouble(s.toString());
-            costPerP = Double.parseDouble(s.toString());
-            eJuicePerW = Double.parseDouble(s.toString());
-            costPerM = Double.parseDouble(s.toString());
-
-            savingsPerWeek.setText(currencyFormater.format(amountSaved));
-                    calcTotalSaved();
-
+            try
+            {
+                packsPerW = Double.parseDouble(s.toString());
+            }
+            catch(NumberFormatException e)
+            {
+                packsPerW = 0;
+            }
+            calcTotalSaved();
         }
-        //starts tracking when the seek bar is touched
+
         public void afterTextChanged(Editable s)
         {
         }
 
-        //stops tracking when the seek bar is no longer touched
+
+        public void beforeTextChanged(CharSequence s, int start, int count,int after)
+        {
+        }
+    };
+
+    private TextWatcher editTextCostPerPWatcher = new TextWatcher() {
+
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            try
+            {
+                costPerP = Double.parseDouble(s.toString());
+            }
+            catch(NumberFormatException e)
+            {
+                costPerP = 0;
+            }
+            calcTotalSaved();
+        }
+
+        public void afterTextChanged(Editable s)
+        {
+        }
+
+
+        public void beforeTextChanged(CharSequence s, int start, int count,int after)
+        {
+        }
+    };
+
+    private TextWatcher editTextEJuicePerWeekWatcher = new TextWatcher() {
+
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            try
+            {
+                eJuicePerW = Double.parseDouble(s.toString());
+            }
+            catch(NumberFormatException e)
+            {
+                eJuicePerW = 0;
+            }
+            calcTotalSaved();
+        }
+
+        public void afterTextChanged(Editable s)
+        {
+        }
+
+
+        public void beforeTextChanged(CharSequence s, int start, int count,int after)
+        {
+        }
+    };
+
+    private TextWatcher editTextCostPerMWatcher = new TextWatcher() {
+
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            try
+            {
+                costPerM = Double.parseDouble(s.toString());
+            }
+            catch(NumberFormatException e)
+            {
+                costPerM = 0;
+            }
+            calcTotalSaved();
+        }
+
+        public void afterTextChanged(Editable s)
+        {
+        }
+
+
         public void beforeTextChanged(CharSequence s, int start, int count,int after)
         {
         }
@@ -75,8 +154,8 @@ public class MoneySaverActivity extends ActionBarActivity {
         double cigTotal = (packsPerW * costPerP);
         double juiceTotal = (eJuicePerW * costPerM);
 
-        amountSaved = ((juiceTotal - cigTotal) * -1);
-
+        amountSaved = (cigTotal - juiceTotal);
+        savingsPerWeek.setText(currencyFormater.format(amountSaved) + " per week!");
     }
 
 
