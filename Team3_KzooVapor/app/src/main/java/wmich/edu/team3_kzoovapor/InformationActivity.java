@@ -9,6 +9,9 @@ package wmich.edu.team3_kzoovapor;
 * Due date: 4/28/15
 * Date completed: 4/28/15
 *************************************
+* This activity simply opens a webview that will
+* display the vapor shops about us part of the site to the
+* user which displays a plethora of info to the user.
 */
 import android.app.Activity;
 import android.os.Bundle;
