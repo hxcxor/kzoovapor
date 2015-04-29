@@ -1,12 +1,17 @@
 package wmich.edu.team3_kzoovapor;
-
+/*
+*************************************
+* Programmers: Bryan Minton, Jonathan Trapane,
+*              Anson Richardson
+* Final Project: Kalamazoo Vapor App
+* CIS 4700: Mobile Commerce Development
+* Spring 2015
+* Due date: 4/28/15
+* Date completed: 4/28/15
+*************************************
+*/
 import android.app.Activity;
-import android.support.v7.app.ActionBarActivity;
-
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;

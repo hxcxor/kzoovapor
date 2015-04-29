@@ -1,3 +1,15 @@
+<!--
+*************************************
+* Programmers: Bryan Minton, Jonathan Trapane,
+*              Anson Richardson
+* Final Project: Kalamazoo Vapor App
+* CIS 4700: Mobile Commerce Development
+* Spring 2015
+* Due date: 4/28/15
+* Date completed: 4/28/15
+*************************************
+-->
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"

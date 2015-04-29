@@ -1,14 +1,34 @@
 package wmich.edu.team3_kzoovapor;
-
-import android.support.v7.app.ActionBarActivity;
+/*
+*************************************
+* Programmers: Bryan Minton, Jonathan Trapane,
+*              Anson Richardson
+* Final Project: Kalamazoo Vapor App
+* CIS 4700: Mobile Commerce Development
+* Spring 2015
+* Due date: 4/28/15
+* Date completed: 4/28/15
+*************************************
+* The Money saver activity allows the user
+* to enter the amount of packs of cigarettes
+* they are or were buying per week, as well
+* as the price of their brand. Then compares
+* that cost to the cost of their e-liquid per week
+* to give a general idea of how much money they will
+* or are saving per week.
+* The data will update on the fly thanks to custom edit
+* text watchers for each field, then that data will be
+* entered in the CalcTotal saved method and output
+* into a text view.
+*/
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.text.NumberFormat;
 

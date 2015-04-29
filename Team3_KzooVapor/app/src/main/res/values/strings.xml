@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+*************************************
+* Programmers: Bryan Minton, Jonathan Trapane,
+*              Anson Richardson
+* Final Project: Kalamazoo Vapor App
+* CIS 4700: Mobile Commerce Development
+* Spring 2015
+* Due date: 4/28/15
+* Date completed: 4/28/15
+*************************************
+-->
+
 <resources>
 
     <string name="app_name">Kalamazoo Vapor</string>
@@ -48,6 +60,10 @@
     <string name="txtCoilResistance">Your coil will have a resistance of:</string>
     <!-- String for unknown -->
     <string name="unknown">Unknown</string>
+    <!-- String for promotions -->
+    <string name="strPromo">Promotions</string>
+    <!-- String for What Did I Get -->
+    <string name="strWhatDidIGet">What Did I Get</string>
     <string name="SoFarSaved">Your savings are:</string>
     <string name="InitialCost">Inital Cost of Supplies</string>
     <string name="CostPerMil">Cost Per Millileter</string>

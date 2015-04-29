@@ -1,17 +1,13 @@
-package wmich.edu.team3_kzoovapor;/*
+package wmich.edu.team3_kzoovapor;
+/*
 *************************************
-* Programmer: Jonathan Trapane
-* Class ID: jtrapa4027
-* Lab #3: Interactive Design-o-Rama
+* Programmers: Bryan Minton, Jonathan Trapane,
+*              Anson Richardson
+* Final Project: Kalamazoo Vapor App
 * CIS 4700: Mobile Commerce Development
 * Spring 2015
 * Due date: 4/28/15
 * Date completed: 4/28/15
-*************************************
-* Program Explanation
-* 
-*
-*
 *************************************
 */
 
@@ -22,7 +18,6 @@ import android.database.sqlite.SQLiteDatabase;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.List;
 
 public class JuiceDataSource
 {
@@ -52,11 +47,11 @@ public class JuiceDataSource
 
     public Juice createJuice(String name, String manufacturer)
     {
-        ContentValues values = new ContentValues();
-        values.put(MySQLiteHelper.COLUMN_NAME, name);
-        values.put(MySQLiteHelper.COLUMN_MANUFACTURER, manufacturer);
+        ContentValues juices = new ContentValues();
+        juices.put(MySQLiteHelper.COLUMN_NAME, name);
+        juices.put(MySQLiteHelper.COLUMN_MANUFACTURER, manufacturer);
 
-        long insertId = database.insert(MySQLiteHelper.TABLE_JUICE, null, values);
+        long insertId = database.insert(MySQLiteHelper.TABLE_JUICE, null, juices);
 
         Cursor cursor = database.query(MySQLiteHelper.TABLE_JUICE,
                 allColumns, MySQLiteHelper.COLUMN_ID + " = "
@@ -77,9 +72,9 @@ public class JuiceDataSource
         + " = " + id, null);
     }
 
-    public List<Juice> getAllJuice()
+    public ArrayList<Juice> getAllJuice()
     {
-        List<Juice> juices = new ArrayList<Juice>();
+        ArrayList<Juice> juices = new ArrayList<Juice>();
 
         Cursor cursor = database.query(MySQLiteHelper.TABLE_JUICE,
                 allColumns, null, null, null, null, null);
