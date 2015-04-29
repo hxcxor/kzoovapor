@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <!--
 *************************************
 * Programmers: Bryan Minton, Jonathan Trapane,
@@ -11,19 +10,26 @@
 * Date completed: 4/28/15
 *************************************
 -->
-    
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="top|center"
-    android:paddingTop="15dp">
 
-    <ImageView
-        android:id="@+id/imageView1"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/nameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/kvs_logo"
-        android:adjustViewBounds="true"/>
+        android:text="@+id/label"
+        android:textSize="20px" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/manufacturerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@+id/label"
+        android:textSize="20px" >
+    </TextView>
 
 </LinearLayout>

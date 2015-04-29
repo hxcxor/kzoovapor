@@ -1,10 +1,23 @@
 package wmich.edu.team3_kzoovapor;
 
+/*
+*************************************
+* Programmers: Bryan Minton, Jonathan Trapane,
+*              Anson Richardson
+* Final Project: Kalamazoo Vapor App
+* CIS 4700: Mobile Commerce Development
+* Spring 2015
+* Due date: 4/28/15
+* Date completed: 4/28/15
+*************************************
+*/
+
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.ListView;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -13,6 +26,9 @@ public class WhatDidIGetActivity extends ListActivity
 {
 
     private JuiceDataSource datasource;
+
+    ListView lv1;
+    JuiceAdapter jus;
 
     @Override
     public void onCreate(Bundle savedInstanceState)
@@ -30,6 +46,12 @@ public class WhatDidIGetActivity extends ListActivity
         List<Juice> values = datasource.getAllJuice();
 
         // use simplecursoradapter to show listview elements
+
+/*        lv1 = (ListView) findViewById(R.id.list);
+        JuiceAdapter jus = new JuiceAdapter(this);
+        lv1.setAdapter(jus);           */
+
+
 
         ArrayAdapter<Juice> adapter = new ArrayAdapter<Juice>(this,
                 R.layout.simple_list_item_1,values);
@@ -51,6 +73,7 @@ public class WhatDidIGetActivity extends ListActivity
 
                 EditText editTextJuiceName = (EditText) findViewById(R.id.nameEditText);
                 EditText editTextManufacturer = (EditText) findViewById(R.id.manufacturerEditText);
+                editTextManufacturer.setVisibility(View.INVISIBLE);
 
                 String name = editTextJuiceName.getText().toString();
                 String manufacturer = editTextManufacturer.getText().toString();

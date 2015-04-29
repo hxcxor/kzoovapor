@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+*************************************
+* Programmers: Bryan Minton, Jonathan Trapane,
+*              Anson Richardson
+* Final Project: Kalamazoo Vapor App
+* CIS 4700: Mobile Commerce Development
+* Spring 2015
+* Due date: 4/28/15
+* Date completed: 4/28/15
+*************************************
+-->
+    
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:padding="10dp">
+    android:background="@drawable/bkgrnd">
 
     <!-- Imageview for Previous Orders banner. Width
              matches parent and height is 100dp. Id is
@@ -12,17 +25,33 @@
              drawable "previousorders". -->
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:id="@+id/imageViewPreviousOrders"
-        android:src="@drawable/previousorders" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kvslogo"
+        android:src="@drawable/kvs_logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/strWhatDidIGet"
+        android:id="@+id/textViewWhatDidIGet"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/kvslogo"
+        android:layout_centerHorizontal="true" />
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:columnCount="1"
         android:orientation="vertical"
-        android:layout_below="@id/imageViewPreviousOrders"
+        android:layout_below="@id/textViewWhatDidIGet"
         android:useDefaultMargins="true" >
 
 
@@ -44,6 +73,7 @@
             android:imeOptions="actionNext"
             android:inputType="text">
         </EditText>
+
 
 
     </GridLayout>
