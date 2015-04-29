@@ -4,7 +4,8 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:background="@drawable/bkgrnd">
 
     <!-- Imageview for Previous Orders banner. Width
              matches parent and height is 100dp. Id is
@@ -13,9 +14,17 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:id="@+id/imageViewPreviousOrders"
-        android:src="@drawable/previousorders" />
+        android:src="@drawable/kvs_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Coil/Juice Storage"
+        android:id="@+id/textViewPrevious"
+        android:layout_gravity="center_horizontal" />
 
     <GridLayout
         android:layout_width="match_parent"
