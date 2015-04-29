@@ -10,6 +10,9 @@
 * Due date: 4/28/15
 * Date completed: 4/28/15
 *************************************
+This layout contains buttons that allow
+the user to select from a list of premium
+juice brands to see the appropriate list
 -->
     
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"

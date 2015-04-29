@@ -8,6 +8,8 @@
 * Due date: 4/28/15
 * Date completed: 4/28/15
 *************************************
+* This layout lets the user choose between
+* the house juice list or the premium juice list
 -->
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"

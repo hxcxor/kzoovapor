@@ -8,6 +8,10 @@
 * Due date: 4/28/15
 * Date completed: 4/28/15
 *************************************
+* The advanced users activity holds the resistance calculator
+* which can be used to calculate the resistance with different
+* configurations. The layout is a simple relative layout containing
+* images and a grid layout to organize the items.
 -->
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"

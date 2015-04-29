@@ -10,6 +10,8 @@
 * Due date: 4/28/15
 * Date completed: 4/28/15
 *************************************
+* This XML holds the formating for the details of
+* the house juice details screen
 -->
     
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"

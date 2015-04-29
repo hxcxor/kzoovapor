@@ -8,6 +8,12 @@
 * Due date: 4/28/15
 * Date completed: 4/28/15
 *************************************
+This layout holds the money saver activity
+which has placeholder textviews and edit texts
+that are controlled by the java so that when
+the user enters data into the fields it the
+output will then be displayed on the bottom
+of the page
 -->
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -19,6 +25,8 @@
     tools:context="wmich.edu.team3_kzoovapor.MoneySaverActivity"
     android:background="@drawable/bkgrnd">
 
+    <!-- Grid layout holds the edit texts and text views in two columns
+    the gridview it self is inside of a relative layout-->
 
     <GridLayout
         android:layout_width="fill_parent"
@@ -123,6 +131,8 @@
             android:layout_column="1"
             android:textColor="#ff000000"
             android:layout_gravity="right" />
+
+        <!-- Spaces for formatting-->
 
         <Space
             android:layout_width="wrap_content"

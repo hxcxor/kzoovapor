@@ -8,6 +8,8 @@
 * Due date: 4/28/15
 * Date completed: 4/28/15
 *************************************
+* This layout contains a webview which is controlled view
+* the java to display the about us page
 -->
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"

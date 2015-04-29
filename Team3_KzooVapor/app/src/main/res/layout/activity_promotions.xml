@@ -38,7 +38,7 @@
         android:id="@+id/textViewPromo"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
-        android:layout_below="@+id/kvslogo"
+        android:layout_below="@+id/kvsLogoPromo"
         android:layout_centerHorizontal="true" />
 
     <ImageView

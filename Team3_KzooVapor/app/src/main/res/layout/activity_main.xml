@@ -8,6 +8,10 @@
 * Due date: 4/28/15
 * Date completed: 4/28/15
 *************************************
+The main activity layout contains controls
+for the user to navigate the app, this will
+be the first thing the user sees and clearly
+communicates their options to them.
 -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
