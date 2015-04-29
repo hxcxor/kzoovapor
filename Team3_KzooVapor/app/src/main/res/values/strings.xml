@@ -94,6 +94,27 @@
     <!-- color strings -->
     <color name="green">#8FD000</color>
     <color name="blue">#2F4CA3</color>
+    <string name="portage">4129 Portage Rd.\nKalamazoo, MI 49001/nPhone: 269-343-4800\nHours: Monday-Friday 9am-8pm
+        \nSaturday 11am-8pm\nSunday 12-5pm</string>
+    <string name="westmain">5041 West Main St.\nKalamazoo, MI 49009\nPhone: 269-743-6138\nHours: Monday-Friday 9am-8pm
+        \nSaturday 11am-8pm\nSunday 12-5pm</string>
+    <string name="grandrapids">4761 Lake Michigan Dr.\nGrand Rapids, MI 49534\nPhone: 616-608-6326\nHours: Monday-Friday 9am-8pm
+        \nSaturday 11am-8pm\nSunday 12-5pm</string>
+    <string name="lincon">1879 Southfield Rd.\nLincoln Park, MI 48146\nPhone: 313-254-9133\nHours: Monday-Saturday 10am-8pm
+        \nSunday 12pm-5pm</string>
+    <string name="saginaw">3037 Bay Plaza Dr.\nSaginaw, MI 48604\nPhone: 989-401-6939\nHours: Monday-Saturday 10am-8pm
+        \nSunday 12pm-5pm</string>
+    <string name="lansing">340 Morgan Lane\nLansing, MI 48912\nPhone: 517-203-5956\nHours: Monday-Saturday 10am-8pm
+        \nSunday 12pm - 5pm</string>
+    <string name="mentor">9201 Mentor Ave.\nMentor, OH  44060\nPhone: 440-205-0997\nHours: Monday-Saturday 11am-9pm
+        \nSunday 12pm-6pm</string>
+    <string name="parma">6339 Olde York Road\nParma Heights, OH 44130\nPhone: 440-481-3867\nHours: Monday-Saturday 11am-9pm
+        \nSunday 12pm-6pm</string>
+    <string name="lynd">5118 Mayfield Rd.\nLyndhurst, OH 44124\nPhone: 440-683-4857\nHours: Monday-Saturday 11am-9pm
+        \nSunday 12pm-6pm</string>
+
+
+
 
     <!-- String array for house juice list -->
 
