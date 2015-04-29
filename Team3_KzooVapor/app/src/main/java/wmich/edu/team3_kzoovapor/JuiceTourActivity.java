@@ -9,6 +9,9 @@ package wmich.edu.team3_kzoovapor;
 * Due date: 4/28/15
 * Date completed: 4/28/15
 *************************************
+* This activity simply opens a webview that will
+* display the vapor shops juice tour site to the
+* user so they can track their rewards
 */
 import android.app.Activity;
 import android.os.Bundle;
