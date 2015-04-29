@@ -56,15 +56,17 @@ public class MoneySaverActivity extends ActionBarActivity {
         //instantiate the text view
         savingsPerWeek = (TextView) findViewById(R.id.textViewSavedTotal);
 
+        //text changed listeners for each of the edit texts
         packsPerWeekEdit.addTextChangedListener(editTextPacksPerWWatcher);
         costPerPackEdit.addTextChangedListener(editTextCostPerPWatcher);
         eJuicePerWeekEdit.addTextChangedListener(editTextEJuicePerWeekWatcher);
         costPerMiliEdit.addTextChangedListener(editTextCostPerMWatcher);
+        //run calc total saved
         calcTotalSaved();
 
     }
 
-
+    //each text watcher will grab the entered data and convert it to a string and error check
     private TextWatcher editTextPacksPerWWatcher = new TextWatcher() {
 
         public void onTextChanged(CharSequence s, int start, int before, int count) {

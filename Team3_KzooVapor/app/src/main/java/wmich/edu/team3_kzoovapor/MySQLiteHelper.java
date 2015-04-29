@@ -18,17 +18,22 @@ import android.util.Log;
 
 public class MySQLiteHelper extends SQLiteOpenHelper
 {
-    // string for juices table
+    // strings for juices table
     public static final String TABLE_JUICE = "juices";
 
+    // id column
     public static final String COLUMN_ID = "_id";
 
+    // name column
     public static final String COLUMN_NAME = "name";
 
+    // manufacturer column
     public static final String COLUMN_MANUFACTURER = "manufacturer";
 
+    // db name
     private static final String DATABASE_NAME = "juice.db";
 
+    // db version
     private static final int DATABASE_VERSION = 1;
 
     // Database creation sql statements
@@ -42,15 +47,18 @@ public class MySQLiteHelper extends SQLiteOpenHelper
 
     public MySQLiteHelper(Context context)
     {
+        // build sqlitehelper
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
+    // oncreate execute database_create
     @Override
     public void onCreate(SQLiteDatabase database)
     {
         database.execSQL(DATABASE_CREATE);
     }
 
+    // onupgrade, upgrade and log
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
     {

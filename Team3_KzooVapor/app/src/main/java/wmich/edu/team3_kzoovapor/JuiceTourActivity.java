@@ -9,6 +9,9 @@ package wmich.edu.team3_kzoovapor;
 * Due date: 4/28/15
 * Date completed: 4/28/15
 *************************************
+* This activity simply opens a webview that will
+* display the vapor shops juice tour site to the
+* user so they can track their rewards
 */
 import android.app.Activity;
 import android.os.Bundle;
@@ -21,11 +24,13 @@ import android.webkit.WebViewClient;
 
 public class JuiceTourActivity extends Activity {
 
+    // webview for juice tour
     private WebView juiceTourWebView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // links to juice tour activity
         setContentView(R.layout.activity_juice_tour);
 
         //initialize the webview

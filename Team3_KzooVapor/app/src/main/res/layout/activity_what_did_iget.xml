@@ -19,19 +19,16 @@
     android:layout_height="fill_parent"
     android:background="@drawable/bkgrnd">
 
-    <!-- Imageview for Previous Orders banner. Width
-             matches parent and height is 100dp. Id is
-             "imageViewPreviousOrders" and calls
-             drawable "previousorders". -->
+    <!-- Imageview for kvs logo. Width and height
+    wrap content. Id is kvsLogoWhatDidIGet. Src is kvs_logo.
+    Gravity is centered horizontally. Top padding of 10dp. -->
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/kvslogo"
+        android:id="@+id/kvsLogoWhatDidIGet"
         android:src="@drawable/kvs_logo"
         android:layout_gravity="center_horizontal"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:paddingTop="10dp" />
 
     <TextView
