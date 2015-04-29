@@ -18,7 +18,7 @@ public class MainActivity extends ActionBarActivity {
 
     ArrayList prgmName;
     public static int[] arrayImages = {};
-    public static String[] arrayListMain = {"Juice list", "Promotions", "Advanced Users", "Money Saver",
+    public static String[] arrayListMain = {"Juice list", "Promotions", "Resistance Calculator", "Money Saver",
             "Information", "Favorites", "What did I Get?", "Juice Tour!",};
 
     @Override

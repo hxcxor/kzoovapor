@@ -1,208 +1,149 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="wmich.edu.team3_kzoovapor.AdvancedUsersActivity">
-
-    <!-- Imageview for Advanced Users title banner.
-    Width matches parent and height is 100dp. Id is
-    imageViewAdvancedUsers and source calls drawable
-    "advancedusers". -->
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bkgrnd">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:id="@+id/imageViewAdvancedUsers"
-        android:src="@drawable/advancedusers" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:src="@drawable/kvs_logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp" />
 
-
-    <!-- Gridlayout for user inputs. Width and height
-    fill parent. Id is "gridLayoutAdvancedUsers". Laid
-    out below "imageViewAdvancedUsers". -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Resistance Calculator"
+        android:id="@+id/textViewResistanceCalc"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
 
     <GridLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@+id/imageViewAdvancedUsers"
-        android:id="@+id/gridLayoutAdvancedUsers">
-
-        <!-- Textview for wire type -->
+        android:layout_below="@+id/textViewResistanceCalc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp">
 
         <TextView
-            android:layout_width="185dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/txtWireType"
+            android:text="Wire Type"
             android:id="@+id/textViewWireType"
             android:layout_row="0"
             android:layout_column="0"
-            style="@style/AppTheme" />
+            android:textSize="18sp"
+            android:paddingTop="12dp" />
 
-        <!-- Edittext for wire type -->
-
-        <EditText
-            android:layout_width="160dp"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="number"
-            android:ems="10"
-            android:id="@+id/editTextWireType"
+            android:text="Wire Gauge"
+            android:id="@+id/textViewWireGauge"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:textSize="18sp"
+            android:paddingTop="12dp" />
+
+        <Spinner
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerWireGauge"
+            android:layout_row="1"
+            android:layout_column="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wrapping Tool"
+            android:id="@+id/textViewWrapTool"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:textSize="18sp"
+            android:paddingTop="12dp" />
+
+        <Spinner
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerWrapTool"
+            android:layout_row="2"
+            android:layout_column="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="# of Wraps"
+            android:id="@+id/textViewWraps"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:textSize="18sp"
+            android:paddingTop="12dp" />
+
+        <Spinner
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerWireType"
+            android:entries="@array/wire_arrays"
             android:layout_row="0"
             android:layout_column="1" />
 
-        <!-- Textview for wire length -->
+        <EditText
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextWraps"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:text="1" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/txtWireLength"
-            android:id="@+id/textViewWireLength"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_row="1"
-            android:layout_column="0" />
-
-        <!-- Edittext for wire length -->
+            android:text="# of Coils"
+            android:id="@+id/textViewCoils"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:paddingTop="12dp"
+            android:textSize="18sp" />
 
         <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:ems="10"
-            android:id="@+id/editTextWireLength"
-            android:layout_row="1"
-            android:layout_column="1" />
-
-        <!-- Textview for wire gauge -->
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/txtWireGauge"
-            android:id="@+id/textViewWireGauge"
-            android:layout_row="2"
-            android:layout_column="0" />
-
-        <!-- Edittext for wire gauge -->
-
-        <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="121dp"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:ems="10"
-            android:id="@+id/editTextWireGauge"
-            android:layout_row="2"
+            android:id="@+id/editTextCoils"
+            android:layout_row="4"
             android:layout_column="1"
-            android:hint="" />
-
-        <!-- Textview for diamater of coil -->
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="@string/txtDiameterOfCoil"
-            android:id="@+id/textViewDiameterOfCoil"
-            android:layout_row="3"
-            android:layout_column="0" />
-
-        <!-- Edittext for diameter of coil -->
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:ems="10"
-            android:id="@+id/editTextDiameterOfCoil"
-            android:layout_row="3"
-            android:layout_column="1" />
-
-        <!-- Spaces -->
-
-        <Space
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_row="4"
-            android:layout_column="0" />
-
-        <Space
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_row="4"
-            android:layout_column="1" />
-
-        <!-- Button to calculate resistance -->
+            android:text="1" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_row="5"
-            android:layout_column="0"
-            android:layout_columnSpan="2"
-            android:text="@string/btnCalculate"
-            android:background="@drawable/button_advanceduser" />
-
-        <Space
-            android:layout_width="20px"
-            android:layout_height="20px"
-            android:layout_row="6"
-            android:layout_column="0" />
-
-        <Space
-            android:layout_width="20px"
-            android:layout_height="20px"
-            android:layout_row="6"
-            android:layout_column="1" />
-
-        <Space
-            android:layout_width="20px"
-            android:layout_height="20px"
-            android:layout_row="7"
-            android:layout_column="0" />
-
-        <Space
-            android:layout_width="20px"
-            android:layout_height="20px"
-            android:layout_row="7"
-            android:layout_column="1" />
-
-        <!-- Textview for coil resistance text -->
-
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp"
-            android:paddingTop="15dp"
-            android:text="@string/txtCoilResistance"
-            android:id="@+id/textViewCoilResistance"
-            android:layout_row="8"
-            android:layout_column="0" />
-
-        <!-- Textview to display user's resistance output -->
+            android:text="Calculate!"
+            android:id="@+id/buttonCalc"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:paddingTop="10dp" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="190dp"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:paddingLeft="50dp"
-            android:paddingRight="50dp"
-            android:paddingTop="5dp"
-            android:text="@string/unknown"
-            android:id="@+id/textViewResistanceOutput"
-            android:layout_row="9"
-            android:layout_column="0"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textViewResult"
+            android:layout_row="6"
+            android:layout_column="1"
+            android:paddingTop="10dp"
+            android:textSize="18sp" />
 
-
-            />
     </GridLayout>
-
 
 </RelativeLayout>

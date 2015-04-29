@@ -171,4 +171,11 @@
         <item>This mentholated Watermelon Lemonade is reminiscent to a snow cone flavor. No huskies
             were harmed in the making of this flavor</item>
     </string-array>
+
+    <string-array name="wire_arrays">
+        <item>Kanthal A1</item>
+        <item>Nichrome</item>
+        <item>Nickel</item>
+    </string-array>
+
 </resources>
