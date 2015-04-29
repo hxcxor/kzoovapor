@@ -23,22 +23,31 @@ import java.util.ArrayList;
 public class MainActivity extends ActionBarActivity {
 
 
+    // declare listview
     ListView mainListView;
+    // declare context to pass
     Context context;
 
+    // array for prgmname
     ArrayList prgmName;
+    // array for images
     public static int[] arrayImages = {};
+    // array for main activity list
     public static String[] arrayListMain = {"Juice list", "Promotions", "Resistance Calculator", "Money Saver",
             "Information", "Locations", "What did I Get?", "Juice Tour!",};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // links to main activity
         setContentView(R.layout.activity_main);
 
+        // declares context as this
         context = this;
 
+        // links mainlistview to listview
         mainListView = (ListView) findViewById(R.id.list);
+        // sets custom adapter for list view
         mainListView.setAdapter(new CustomAdapter(this, arrayListMain, arrayImages));
 
     }

@@ -25,29 +25,38 @@ public class JuiceListActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // links to juice list layout
         setContentView(R.layout.activity_juice_list);
+        // links to premium image view
         ImageView imageButtonPrem = (ImageView) findViewById(R.id.imageViewPremButton);
+        // links to house image view
         ImageView imageButtonHouse = (ImageView) findViewById(R.id.imageViewHouseButton);
 
 
+        // on touch listener for premiumjuice
         imageButtonPrem.setOnTouchListener(premiumJuice);
+        // on touch listener for housejuice
         imageButtonHouse.setOnTouchListener(houseJuice);
     }
 
+    // builds ontouchlistener for premium juice
     View.OnTouchListener premiumJuice = new View.OnTouchListener() {
         @Override
         public boolean onTouch(View v, MotionEvent event) {
 
+            // create intent to send user to premiumjuice
             Intent senseIntent = new Intent(JuiceListActivity.this, PremiumJuiceActivity.class);
             startActivity(senseIntent);
             return false;
         }
     };
 
+    // ontouchlistener for house juice
     View.OnTouchListener houseJuice = new View.OnTouchListener() {
         @Override
         public boolean onTouch(View v, MotionEvent event) {
 
+            // intent to send user to housejuicelist
             Intent senseIntent = new Intent(JuiceListActivity.this, HouseJuiceActivity.class);
             startActivity(senseIntent);
             return false;
