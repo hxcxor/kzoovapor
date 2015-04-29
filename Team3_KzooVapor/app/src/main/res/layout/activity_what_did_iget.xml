@@ -10,6 +10,9 @@
 * Due date: 4/28/15
 * Date completed: 4/28/15
 *************************************
+This layout contains a list view that
+the user can add or delete items to
+for future reference
 -->
     
 <LinearLayout
