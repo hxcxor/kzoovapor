@@ -26,43 +26,53 @@ public class JuiceAdapter extends BaseAdapter
 
     public JuiceAdapter(Context mContext)
     {
+        // minflater to inflate layout - passes mcontext
         mInflater = (LayoutInflater) mContext.getSystemService(
                 Context.LAYOUT_INFLATER_SERVICE);
     }
 
 
 
+    // get count
     @Override
     public int getCount() {
         return 30;
     }
 
+    // get item position
     @Override
     public Object getItem(int position) {
         return position;
     }
 
+    // get item id
     @Override
     public long getItemId(int position) {
         return 0;
     }
 
+    // getview for custom adapter
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // TODO Auto-generated method stub
+        // viewholder vh
         final ViewHolder vh;
         vh= new ViewHolder();
 
+        // if no convertview
         if(convertView==null )
         {
+            // inflate
             convertView=mInflater.inflate(R.layout.rowlayout, parent,false);
 
+            // tie variables to textviews
             vh.tv2= (TextView)convertView.findViewById(R.id.manufacturerTextView);
             vh.tv1= (TextView)convertView.findViewById(R.id.nameTextView);
 
 
         }
         else
+        // else set text to defaults
         {
             convertView.setTag(vh);
         }
@@ -71,6 +81,7 @@ public class JuiceAdapter extends BaseAdapter
         return convertView;
     }
 
+    // viewholder variable textviews 1 and 2
     class ViewHolder
     {
         TextView tv1,tv2;
