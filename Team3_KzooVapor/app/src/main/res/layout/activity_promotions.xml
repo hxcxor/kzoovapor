@@ -46,13 +46,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/ipvgiveaway"
         android:src="@drawable/ipvgiveaway"
-        android:layout_below="@id/textViewPromo"
         android:layout_gravity="center_horizontal"
-        android:layout_centerHorizontal="true"
         android:paddingTop="25dp"
         android:paddingLeft="25dp"
         android:paddingRight="25dp"
-        android:paddingBottom="25dp"/>
+        android:paddingBottom="25dp"
+        android:layout_below="@+id/kvsLogoPromo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 
 
