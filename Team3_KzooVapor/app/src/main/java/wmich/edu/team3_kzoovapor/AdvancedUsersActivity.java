@@ -1,5 +1,15 @@
 package wmich.edu.team3_kzoovapor;
-
+/*
+*************************************
+* Programmers: Bryan Minton, Jonathan Trapane,
+*              Anson Richardson
+* Final Project: Kalamazoo Vapor App
+* CIS 4700: Mobile Commerce Development
+* Spring 2015
+* Due date: 4/28/15
+* Date completed: 4/28/15
+*************************************
+*/
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -12,19 +22,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-
-/*
-*************************************
-* Programmers: Bryan Minton, Jonathan Trapane,
-*              Anson Richardson
-* Final Project: Kalamazoo Vapor App
-* CIS 4700: Mobile Commerce Development
-* Spring 2015
-* Due date: 4/28/15
-* Date completed: 4/28/15
-*************************************
-*/
-
 
 public class AdvancedUsersActivity extends Activity implements OnItemSelectedListener {
     Spinner spType, spGauge, spTool;

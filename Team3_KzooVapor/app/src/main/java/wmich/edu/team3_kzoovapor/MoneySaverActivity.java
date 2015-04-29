@@ -35,16 +35,21 @@ import java.text.NumberFormat;
 
 public class MoneySaverActivity extends ActionBarActivity {
 
+    // currency formatting
     private static final NumberFormat currencyFormater = NumberFormat.getCurrencyInstance();
+    // doubles for variable
     private double packsPerW, costPerP, eJuicePerW, costPerM;
+    // edittexts for user input
     private EditText packsPerWeekEdit, costPerPackEdit, eJuicePerWeekEdit, costPerMiliEdit;
+    // textview to display user savings
     private TextView savingsPerWeek;
-
+    // double for savings
     private double amountSaved;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // link to money saver activity
         setContentView(R.layout.activity_money_saver);
 
         //instantiate the edit texts
@@ -56,17 +61,21 @@ public class MoneySaverActivity extends ActionBarActivity {
         //instantiate the text view
         savingsPerWeek = (TextView) findViewById(R.id.textViewSavedTotal);
 
+        // textchanged listeners for edittexts
         packsPerWeekEdit.addTextChangedListener(editTextPacksPerWWatcher);
         costPerPackEdit.addTextChangedListener(editTextCostPerPWatcher);
         eJuicePerWeekEdit.addTextChangedListener(editTextEJuicePerWeekWatcher);
         costPerMiliEdit.addTextChangedListener(editTextCostPerMWatcher);
+        // run method calctotalsaved
         calcTotalSaved();
 
     }
 
 
+    // textwatcher for packs per week
     private TextWatcher editTextPacksPerWWatcher = new TextWatcher() {
 
+        // update on textchanged
         public void onTextChanged(CharSequence s, int start, int before, int count) {
 
             try
@@ -77,6 +86,7 @@ public class MoneySaverActivity extends ActionBarActivity {
             {
                 packsPerW = 0;
             }
+            // run total saved method
             calcTotalSaved();
         }
 
@@ -90,18 +100,23 @@ public class MoneySaverActivity extends ActionBarActivity {
         }
     };
 
+    // textwatcher for cost per pack
     private TextWatcher editTextCostPerPWatcher = new TextWatcher() {
 
+        // update ontextchanged
         public void onTextChanged(CharSequence s, int start, int before, int count) {
 
             try
             {
+                // parse double to string
                 costPerP = Double.parseDouble(s.toString());
             }
             catch(NumberFormatException e)
             {
+                // must have input over 0
                 costPerP = 0;
             }
+            // run calctotalsaved method
             calcTotalSaved();
         }
 
@@ -115,16 +130,20 @@ public class MoneySaverActivity extends ActionBarActivity {
         }
     };
 
+    // textwatcher for ejuiceperweek
     private TextWatcher editTextEJuicePerWeekWatcher = new TextWatcher() {
 
+        // update on text changed
         public void onTextChanged(CharSequence s, int start, int before, int count) {
 
             try
             {
+                // parse double to string
                 eJuicePerW = Double.parseDouble(s.toString());
             }
             catch(NumberFormatException e)
             {
+                // input greater than 0
                 eJuicePerW = 0;
             }
             calcTotalSaved();
@@ -140,16 +159,19 @@ public class MoneySaverActivity extends ActionBarActivity {
         }
     };
 
+    // watcher for cost per month
     private TextWatcher editTextCostPerMWatcher = new TextWatcher() {
 
         public void onTextChanged(CharSequence s, int start, int before, int count) {
 
             try
             {
+                // parse double to string
                 costPerM = Double.parseDouble(s.toString());
             }
             catch(NumberFormatException e)
             {
+                // cost per month greater than 0
                 costPerM = 0;
             }
             calcTotalSaved();
@@ -165,12 +187,17 @@ public class MoneySaverActivity extends ActionBarActivity {
         }
     };
 
+    // method to calculate total saved
     private void calcTotalSaved(){
 
+        // cigtotal is packsperweek * costperweek
         double cigTotal = (packsPerW * costPerP);
+        // juicetotal is ejuiceperweek * cost per month
         double juiceTotal = (eJuicePerW * costPerM);
 
+        // amountsaved cigtotal minus juicetotal
         amountSaved = (cigTotal - juiceTotal);
+        // set text and format to savings per week
         savingsPerWeek.setText(currencyFormater.format(amountSaved) + " per week!");
     }
 

@@ -13,9 +13,11 @@
 
 <resources>
 
+    <!-- String for app name -->
     <string name="app_name">Kalamazoo Vapor</string>
-    <string name="hello_world">Hello world!</string>
+
     <string name="action_settings">Settings</string>
+    <!-- Strings for activity titles -->
     <string name="title_activity_juice_list">Juice List</string>
     <string name="title_activity_promotions">Promotion/!</string>
     <string name="title_activity_advanced_users">Advanced Users</string>
@@ -41,9 +43,8 @@
     <string name="btnWhatDidIGet">What Did I Get</string>
     <!-- String for juice tour button -->
     <string name="btnJuiceTour">Juice Tour</string>
-
+    <!-- String for image header -->
     <string name="image_header">kzoo vapor logo</string>
-
     <!-- String for resistance calculator -->
     <string name="resistanceCalc">Resistance Calculator</string>
     <!-- String for wire type -->
@@ -51,9 +52,13 @@
     <!-- String for wire length -->
     <string name="txtWireLength">Length</string>
     <!-- String for wire gauge -->
-    <string name="txtWireGauge">Gauge</string>
+    <string name="txtWireGauge">Wire Gauge</string>
+    <!-- String for wrapping tool -->
+    <string name="txtWrappingTool">Wrapping Tool</string>
     <!-- String for diameter of coil -->
-    <string name="txtDiameterOfCoil">Diameter of Coil</string>
+    <string name="txtNumCoils"># of Coils</string>
+    <!-- String for # wraps -->
+    <string name="txtNumWraps"># of Wraps</string>
     <!-- String for calculate button -->
     <string name="btnCalculate">Calculate</string>
     <!-- String for advanced user output -->
@@ -64,19 +69,33 @@
     <string name="strPromo">Promotions</string>
     <!-- String for What Did I Get -->
     <string name="strWhatDidIGet">What Did I Get</string>
+    <!-- Savings string -->
     <string name="SoFarSaved">Your savings are:</string>
+    <!-- initial cost string -->
     <string name="InitialCost">Inital Cost of Supplies</string>
+    <!-- ml cost string -->
     <string name="CostPerMil">Cost Per Millileter</string>
+    <!-- ml amount string -->
     <string name="AmountPerMil">Millileters</string>
+    <!-- ejuice per week string -->
     <string name="EJuicePerWeek">Amount of E-Juice Per Week</string>
+    <!-- costperpack string -->
     <string name="CostPerPack">Cost Per Pack</string>
+    <!-- packs per week string -->
     <string name="PacksPerWeek">Packs per week:</string>
+    <!-- money saver image string -->
     <string name="mnySaverImg">money saver image</string>
+    <!-- imagedisc holder string -->
     <string name="imagedisc">holder for image</string>
+    <!-- hint for name edittext string -->
     <string name="hintName">Name</string>
+    <!-- hint for manufacturer edittext string -->
     <string name="hintManufacturer">Manufacturer</string>
+    <!-- color strings -->
     <color name="green">#8FD000</color>
     <color name="blue">#2F4CA3</color>
+
+    <!-- String array for house juice list -->
 
     <string-array name="houseJuiceArray">
         <item>Tastes like the apples and cinnamon cereal with slightly spicy tobacco notes.</item>
@@ -188,6 +207,7 @@
             were harmed in the making of this flavor</item>
     </string-array>
 
+    <!-- string array for wire types -->
     <string-array name="wire_arrays">
         <item>Kanthal A1</item>
         <item>Nichrome</item>

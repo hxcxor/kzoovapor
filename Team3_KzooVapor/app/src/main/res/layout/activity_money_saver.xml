@@ -226,6 +226,10 @@
             android:layout_marginTop="20dp" />
     </GridLayout>
 
+    <!-- Imageview for kvs logo. Width matches parent and
+    height wraps content. Id is kimageViewMoneySaver. Src is kvs_logo.
+    Description calls string "mnySaverImg". -->
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

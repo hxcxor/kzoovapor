@@ -15,15 +15,15 @@
     android:layout_height="fill_parent"
     android:background="@drawable/bkgrnd">
 
-    <!-- Imageview for Promotions banner. Widdth
-     matches parent and height is 100dp. Id is
-     "imageViewPromotions" and calls drawable
-     "promotions". -->
+    <!-- Imageview for kvs logo. Width and height
+    wrap content. Id is kvsLogoPromo. Src is kvs_logo.
+    Gravity is centered horizontally and is aligned with
+    top of parent. Top padding of 10dp. -->
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/kvslogo"
+        android:id="@+id/kvsLogoPromo"
         android:src="@drawable/kvs_logo"
         android:layout_gravity="center_horizontal"
         android:layout_alignParentTop="true"

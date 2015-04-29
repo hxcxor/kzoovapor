@@ -24,11 +24,13 @@ import android.webkit.WebViewClient;
 
 public class JuiceTourActivity extends Activity {
 
+    // webview for juice tour
     private WebView juiceTourWebView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // links to juice tour activity
         setContentView(R.layout.activity_juice_tour);
 
         //initialize the webview

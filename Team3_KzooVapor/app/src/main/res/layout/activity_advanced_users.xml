@@ -15,30 +15,40 @@
     android:layout_height="fill_parent"
     android:background="@drawable/bkgrnd">
 
+    <!-- Imageview for kvs logo. Width and height
+    wrap content. Id is kvsLogoAdvanced. Src is kvs_logo.
+    Gravity is centered horizontally and is aligned with
+    top of parent. Top padding of 10dp. -->
+
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:layout_row="0"
-        android:layout_column="0"
+        android:id="@+id/kvsLogoAdvanced"
         android:src="@drawable/kvs_logo"
         android:layout_gravity="center_horizontal"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:paddingTop="10dp" />
 
+    <!-- Textview to display activity title. Wraps
+    content. Large text appearance. Displays string
+    "resistanceCalc". Id is textViewResistanceCalc.
+    Centered horizontally and laid out below
+    "kvsLogoAdvanced". -->
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Resistance Calculator"
+        android:text="@string/resistanceCalc"
         android:id="@+id/textViewResistanceCalc"
-        android:layout_row="1"
-        android:layout_column="0"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
-        android:layout_below="@+id/imageView"
+        android:layout_below="@+id/kvsLogoAdvanced"
         android:layout_centerHorizontal="true" />
+
+    <!-- Gridlayout to display advanced user texts. Fills
+    parent and aligned to the left with a margin of 10dp. -->
 
     <GridLayout
         android:layout_width="fill_parent"
@@ -48,10 +58,15 @@
         android:layout_alignParentStart="true"
         android:layout_marginLeft="10dp">
 
+        <!-- Textview for wire type. Wraps content.
+         Calls string "txtWireType". Id is "textViewWireType".
+         Row 0 and column 0. Textsize 18sp. Top padding
+         is 12dp. -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Wire Type"
+            android:text="@string/txtWireType"
             android:id="@+id/textViewWireType"
             android:layout_row="0"
             android:layout_column="0"
@@ -61,7 +76,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Wire Gauge"
+            android:text="@string/txtWireGauge"
             android:id="@+id/textViewWireGauge"
             android:layout_row="1"
             android:layout_column="0"
@@ -78,7 +93,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Wrapping Tool"
+            android:text="@string/txtWrappingTool"
             android:id="@+id/textViewWrapTool"
             android:layout_row="2"
             android:layout_column="0"
@@ -95,7 +110,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="# of Wraps"
+            android:text="@string/txtNumWraps"
             android:id="@+id/textViewWraps"
             android:layout_row="3"
             android:layout_column="0"
@@ -122,7 +137,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="# of Coils"
+            android:text="@string/txtNumCoils"
             android:id="@+id/textViewCoils"
             android:layout_row="4"
             android:layout_column="0"
